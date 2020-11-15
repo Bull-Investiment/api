@@ -10,7 +10,6 @@ routes.post('/login', SessionController.show);
 
 routes.post('/users/:user_id/questions', QuestionController.create);
 
-
 // routes.post('/users/:user_id', UserController.store);
 
 
