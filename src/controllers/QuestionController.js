@@ -1,6 +1,5 @@
 const Question = require('../models/Question');
 const User = require('../models/User');
-const {rating} = require('../utils/userProfile')
 
 module.exports = {
   async create(req, res) {
