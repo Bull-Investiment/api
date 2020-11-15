@@ -5,7 +5,7 @@ const {rating} = require('../utils/userProfile')
 module.exports = {
   async create(req, res) {
     const { user_id } = req.params;
-    const { first_ask, second_ask,third_ask,fourth_ask } = req.body;
+    const { first, second, third, fourth } = req.body;
 
     try {
       const user = await User.findByPk(user_id);
@@ -14,20 +14,18 @@ module.exports = {
         return res.status(400).json({ status: 'error', result: 'User not found'});
       }
       const payload = {
-        first_ask, second_ask,third_ask,fourth_ask
+        first, second, third, fourth
       }
 
       // console.log(await rating(payload));
 
       const question = await Question.create({
-        first_ask, 
-        second_ask,
-        third_ask,
-        fourth_ask,
+        first, 
+        second,
+        third,
+        fourth,
         user_id
       });
-
-
       return res.json({ status: 'ok', result: question});
     }
     catch(err) {
