@@ -13,7 +13,6 @@ module.exports = {
 
       if (user.password !== password) {
         return res.status(400).json({ status: 'error', result: 'Incorrect password'});
-
       }
 
       return res.json({ status: 'ok', result: user})
