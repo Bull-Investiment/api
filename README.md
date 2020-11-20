@@ -58,8 +58,8 @@ Segundo a Valor Investe, em março de 2020 cerca de 2,24 milhões dos brasileiro
 
 As seguintes tecnologias foram utilizadas no projeto deste repositório:
 
-- [React Native](https://reactnative.dev/)
-- [Expo](https://expo.io/)
+- [NodeJS](https://nodejs.org/en/)
+- [Postgres](https://www.postgresql.org)
 
 <h2 id="autores">Autores  :busts_in_silhouette: </h2>
 
